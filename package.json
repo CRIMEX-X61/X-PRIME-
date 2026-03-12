@@ -5,10 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "postinstall": "node scripts/patch-baileys.cjs || echo 'patch-baileys skipped'",
+    "postinstall": "node scripts/patch-baileys.cjs || echo 'patch skipped'",
     "start": "node index.js",
-    "start:heroku": "node --max-old-space-size=512 --optimize-for-size index.js",
-    "heroku-postbuild": "node scripts/patch-baileys.cjs || echo 'patch-baileys skipped'",
+    "heroku-postbuild": "node scripts/patch-baileys.cjs || echo 'patch skipped'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -38,7 +37,6 @@
     "jimp": "^1.6.0",
     "jsdom": "^22.1.0",
     "libphonenumber-js": "^1.11.18",
-    "libsignal": "^2.0.1",
     "link-preview-js": "^3.0.5",
     "moment-timezone": "^0.5.43",
     "mumaker": "^2.0.0",
