@@ -3,6 +3,26 @@ const OWNER_NUMBER = process.env.OWNER_NUMBER;
 
 console.log('[TRUTH-MD] Preload running. SESSION_ID present:', !!SESSION_ID, '| OWNER_NUMBER present:', !!OWNER_NUMBER);
 
+// Catch ANY crash so we can see what kills the process
+process.on('uncaughtException', (err) => {
+  console.error('[TRUTH-MD] UNCAUGHT EXCEPTION:', err && err.message, err && err.stack);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason) => {
+  console.error('[TRUTH-MD] UNHANDLED REJECTION:', reason && reason.message ? reason.message : reason, reason && reason.stack ? reason.stack : '');
+  process.exit(1);
+});
+
+process.on('SIGTERM', () => {
+  console.error('[TRUTH-MD] SIGTERM received — process was killed externally (possible memory limit or Heroku R15)');
+  process.exit(143);
+});
+
+process.on('exit', (code) => {
+  console.log('[TRUTH-MD] Process exiting with code:', code);
+});
+
 if (SESSION_ID || OWNER_NUMBER) {
   const fs = require('fs');
   const path = require('path');
