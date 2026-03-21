@@ -4,8 +4,7 @@
   "description": "WhatsApp Bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "node scripts/patch-baileys.cjs"
+    "start": "node index.js"
   },
   "author": "courtney",
   "license": "ISC",
