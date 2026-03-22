@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "postgresql-16"]
 [agent]
 expertMode = true
 
@@ -41,4 +41,3 @@ externalPort = 8080
 [userenv]
 
 [userenv.shared]
-OWNER_NUMBER = "254101150748"
