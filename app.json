@@ -1,15 +1,15 @@
 {
-  "name": "TRUTH-MD",
-  "description": "TRUTH MD WhatsApp Bot",
-  "logo": "https://i.ibb.co/nqsRcKDB/Xploader4.jpg",
+  "name": "X-PRIME",
+  "description": "X PRIME WhatsApp Bot",
+  "logo": "https://files.catbox.moe/38p64y.jpg",
   "keywords": [
     "whatsapp-bot"
   ],
-  "repository": "https://github.com/Courtney250/TRUTH-MD",
+  "repository": "https://github.com/CRIMEX-X61/X-PRIME-",
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Your WhatsApp session ID (must start with TRUTH-MD:~)",
+      "description": "Your WhatsApp session ID (must start with X-PRIME:~)",
       "required": false
     }
   },
