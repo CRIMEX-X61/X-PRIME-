@@ -1,13 +1,13 @@
 {
-  "name": "truth-md",
+  "name": "x-prime",
   "version": "1.0.6",
-  "description": "TRUTH-MD Bot Relay",
+  "description": "X-PRIME Bot Relay",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "postinstall": "node scripts/patch-baileys.cjs || true"
   },
-  "author": "courtney",
+  "author": "x",
   "license": "ISC",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
