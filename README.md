@@ -25,7 +25,7 @@
 
 <br/>
 
-<a href="https://truthsite.courtneytech.xyz/">
+<a href="">
   <img src="https://img.shields.io/badge/CLICK%20HERE-DC143C?style=for-the-badge&logo=heroku&logoColor=white" height="100"/>
 </a>
 <br/><strong>SESSION ID & DEPLOYMENTS</strong>
