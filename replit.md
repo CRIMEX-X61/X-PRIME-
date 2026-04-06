@@ -1,7 +1,7 @@
-# TRUTH-MD WhatsApp Bot
+# X-PRIME WhatsApp Bot
 
 ## Overview
-TRUTH-MD is a WhatsApp Multi-Device bot relay built on Node.js using the `@whiskeysockets/baileys` library. It runs as a background worker process.
+X-PRIME is a WhatsApp Multi-Device bot relay built on Node.js using the `@whiskeysockets/baileys` library. It runs as a background worker process.
 
 ## Tech Stack
 - **Runtime:** Node.js 20
@@ -28,7 +28,7 @@ On first boot the relay:
 5. Prompts for WhatsApp authentication (Session ID or phone number)
 
 ## Authentication
-Set the `SESSION_ID` environment variable to your WhatsApp session ID (must start with `TRUTH-MD:~`) to skip the QR/phone auth prompt.
+Set the `SESSION_ID` environment variable to your WhatsApp session ID (must start with `X-PRIME:~`) to skip the QR/phone auth prompt.
 
 Without `SESSION_ID`, the bot will prompt for authentication on the console.
 
